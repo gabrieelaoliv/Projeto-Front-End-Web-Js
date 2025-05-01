@@ -1,0 +1,82 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: black; 
+}
+
+#inicio {
+    display: grid;
+    justify-content: center;
+    gap: 1.5rem;
+    padding: 2rem;
+}
+
+.movie {
+    display: flex;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    padding: 1rem;
+    margin: auto;
+    width: 100%;
+    font-family: Arial, sans-serif;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    background-color: #fff;
+}
+
+.movie:hover {
+    transform: scale(1.03);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.movie_img {
+    width: 150px;
+    height: auto;
+    margin-right: 1.5rem;
+}
+
+.movie_img img {
+    width: 100%;
+    border-radius: 4px;
+}
+
+.movie_infos {
+    flex: auto;
+    /* Faz com que a descrição ocupe o restante do espaço */
+}
+
+.movie_title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.movie_date {
+    font-size: 0.9rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.movie_vote {
+    font-size: 1rem;
+    color: black;
+    margin-bottom: 0.3rem;
+}
+
+.movie_genero {
+    color: black;
+    font-size: 0.9rem;
+}
+
+.movie_overview {
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: #666;
+
+    /*flex: auto;*/
+    max-height: 200px;
+    /* Limita a altura para não sair do layout*/
+    overflow: auto;
+    /* Adiciona barra de rolagem se a descrição for longa */
+}
